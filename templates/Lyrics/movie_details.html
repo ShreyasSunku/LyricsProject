@@ -1,0 +1,35 @@
+{% extends 'Lyrics/Base.html' %}
+{% load embed_video_tags %}
+
+{% block Content %}
+
+<div class="py-4">
+    <div class="container">
+
+            {% if mov_details.Upload %}
+            <img src="{{mov_details.Upload.url}}" alt="{{mov_details.Movie}}" class="mx-auto d-block" width="350" height="236">
+            {% endif %}
+
+            <p class="card-title">MovieName: <strong>{{mov_details.MovieName}}</strong></p>
+            <p class="card-text"><strong>Actor:</strong> {{mov_details.Actor}}</p>
+            <p class="card-text"><strong>ReleaseDate: </strong>{{mov_details.ReleaseDate}}</p>
+            <p class="card-text"><strong>MovieDirector: </strong>{{mov_details.MovieDirector}}</p>
+            <p class="card-text"><strong>MusicDirector: </strong>{{mov_details.MusicDirector}}</p>
+            <p class="card-text"><strong>Studio: </strong>{{mov_details.Studio}}</p>
+            <p class="card-text"><strong>Producer: </strong>{{mov_details.Producer}}</p>
+            <p class="card-text"><strong>Wood: </strong>{{mov_details.Wood}}</p>
+            <p class="card-text"><strong>Language: </strong>{{mov_details.Language}}</p>
+            <p class="card-text"><strong>Genre: </strong>{{mov_details.Genre}}</p>
+            <p class="card-text"><strong>RunTimeMinutes: </strong>{{mov_details.RunTimeMinutes}}</p>
+            <p class="card-text"><strong>Certificate: </strong>{{mov_details.Certificate}}</p>
+            <p class="card-text"><strong>Review: </strong>{{mov_details.Review}}</p>
+            <p class="card-text"><strong>YouTube: </strong>{{mov_details.Studio}}</p>
+            <br>
+            <p><strong>Trailer From {{mov_details.MovieName}}: </strong></p>
+            {% video mov_details.YouTube.youtube '1070x560' %}
+
+
+    </div>
+</div>
+
+{% endblock %}

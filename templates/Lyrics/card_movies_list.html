@@ -1,0 +1,16 @@
+{% load embed_video_tags %}
+<div class="col-md-4">
+    <div class="card">
+        {% if ls.Upload %}
+        <img class="card-img-top" src="{{ls.Upload.url}}" alt="{{ls.Language}}" width="100%" height="200">
+        {% endif %}
+        <div class="card-body">
+            <a href="{% url 'movie_details' ls.id %}">
+                <h5 class="card-title">{{ls.MovieName}}</h5>
+            </a>
+            <a href="{% url 'm_list' ls.id %}">
+                <h5 class="card-title btn btn-outline-dark">Songs</h5>
+            </a>
+        </div>
+    </div>
+</div>

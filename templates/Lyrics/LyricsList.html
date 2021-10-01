@@ -1,0 +1,97 @@
+{% extends 'Lyrics/Base.html' %}
+
+{% block Content %}
+
+
+<div class="py-4">
+    <div class="container">
+        <h3>Recently Added</h3>
+        <div class="row hidden-md-up">
+        {% for ls in lyrics_data %}
+            {% include 'Lyrics/card_songs_list.html' %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="py-4">
+    <div class="container">
+        <h3>Telugu Movies</h3>
+        <div class="row hidden-md-up">
+            {% for ls in telugu_songs %}
+                {% include 'Lyrics/card_songs_list.html' %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="py-4">
+    <div class="container">
+        <h3>Hindi Movies</h3>
+        <div class="row hidden-md-up">
+            {% for ls in hindi_songs %}
+                {% include 'Lyrics/card_songs_list.html' %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="py-4">
+    <div class="container">
+        <h3>Tamil Movies</h3>
+        <div class="row hidden-md-up">
+        {% for ls in tamil_songs %}
+            {% include 'Lyrics/card_songs_list.html' %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="py-4">
+    <div class="container">
+        <h3>Malayalam Movies</h3>
+        <div class="row hidden-md-up">
+        {% for ls in malayalam_songs %}
+            {% include 'Lyrics/card_songs_list.html' %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="py-4">
+    <div class="container">
+        <h3>Kannada Movies</h3>
+        <div class="row hidden-md-up">
+        {% for ls in kannada_songs %}
+            {% include 'Lyrics/card_songs_list.html' %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<div class="py-4">
+    <div class="container">
+        <h3>English Movies</h3>
+        <div class="row hidden-md-up">
+            {% for ls in english_songs %}
+                {% include 'Lyrics/card_songs_list.html' %}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<hr>
+
+{% endblock %}

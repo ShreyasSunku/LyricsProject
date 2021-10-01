@@ -1,0 +1,80 @@
+{% extends 'Lyrics/Base.html' %}
+
+{% block Content %}
+
+<h3>All Movies</h3>
+<div class="card-group">
+
+    {% for ls in all_movies %}
+        {% include 'Lyrics/card_movies_list.html' %}
+    {% endfor %}
+
+</div>
+
+<br>
+<hr>
+<br>
+
+<h3>Telugu Movies</h3>
+<div class="card-group row col-md-12">
+    {% for ls in telugu_movies %}
+        {% include 'Lyrics/card_movies_list.html' %}
+    {% endfor %}
+</div>
+
+<br>
+<hr>
+<br>
+
+<h3>Hindi Movies</h3>
+<div class="card-group row col-md-12">
+    {% for ls in hindi_movies %}
+        {% include 'Lyrics/card_movies_list.html' %}
+    {% endfor %}
+</div>
+
+<br>
+<hr>
+<br>
+
+<h3>Tamil Movies</h3>
+<div class="card-group row col-md-12">
+    {% for ls in tamil_movies %}
+        {% include 'Lyrics/card_songs_list.html' %}
+    {% endfor %}
+</div>
+
+<br>
+<hr>
+<br>
+
+<h3>Malayalam Movies</h3>
+<div class="card-group row col-md-12">
+    {% for ls in malayalam_movies %}
+        {% include 'Lyrics/card_songs_list.html' %}
+    {% endfor %}
+</div>
+
+<br>
+<hr>
+<br>
+
+<h3>Kannada Movies</h3>
+<div class="card-group row col-md-12">
+    {% for ls in kannada_movies %}
+        {% include 'Lyrics/card_songs_list.html' %}
+    {% endfor %}
+</div>
+
+<br>
+<hr>
+<br>
+
+<h3>English Movies</h3>
+<div class="card-group row col-md-12">
+    {% for ls in english_movies %}
+        {% include 'Lyrics/card_songs_list.html' %}
+    {% endfor %}
+</div>
+
+{% endblock %}

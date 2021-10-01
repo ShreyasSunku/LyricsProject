@@ -1,0 +1,13 @@
+<div class="col-md-4">
+    <div class="card">
+        {% if ls.Upload %}
+        <img class="card-img-top" src="{{ls.Upload.url}}" alt="{{ls.Movie}}" width="350" height="236">
+        {% endif %}
+        <div class="card-body">
+            <a href="{% url 'lyrics' ls.id %}">
+                <h5 class="card-title">{{ls.SongName}}</h5>
+            </a>
+            <p class="card-text">Movie: <a href="{% url 'm_list' ls.Movie.id %}"> <b>{{ls.Movie}}</b></a></p>
+        </div>
+    </div>
+</div>
