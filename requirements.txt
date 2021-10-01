@@ -10,14 +10,11 @@ django-multiselectfield==0.1.12
 django-pyodbc-azure==2.1.0.0
 gunicorn==20.1.0
 idna==3.2
-mssql-django==1.0
 null==0.6.1
 Pillow==8.3.2
-psycopg2==2.9.1
 pytz==2021.1
 requests==2.26.0
 six==1.16.0
 sqlparse==0.4.2
-urllib3==1.26.7
 waitress==2.0.0
 whitenoise==5.3.0
