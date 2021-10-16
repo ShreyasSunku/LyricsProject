@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
   <head>
@@ -26,8 +27,7 @@
 
         <!-- Image and text -->
         <a class="navbar-brand" href="{% url 'lyricsList' %}">
-            <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-            Lyrics
+            <img src="{% static 'Logo/l3.png' %}" width="180" height="50" class="d-inline-block align-top" alt="">
         </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
