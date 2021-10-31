@@ -2,21 +2,27 @@
 
 {% block Content %}
 
-<div class="py-4">
-    <div class="container">
+<div class="row" style="padding: 30px;">
+        <div class="col-md-6 col-xl-7">
+                {% if musicDir.Upload %}
+                <img src="{{musicDir.Upload.url}}" alt="{{musicDir.Movie}}" class="mx-auto d-block" width="600" height="350">
+                {% endif %}
+        </div>
 
-            {% if musicDir.Upload %}
-            <img src="{{musicDir.Upload.url}}" alt="{{musicDir.Movie}}" class="mx-auto d-block" width="350" height="236">
-            {% endif %}
+        <div class="col-md-6 col-xl-5">
+                <p>Name: <strong class="text-warning" style="font-size: 20px;">{{musicDir.FullName}}</strong></p>
+                <p class="card-text"><strong>Gender:</strong> {{musicDir.Gender}}</p>
+                <p class="card-text"><strong>Date of Birth: </strong>{{musicDir.DoB}}</p>
+                <p class="card-text"><strong>Date of Death: </strong>{{musicDir.DOD}}</p>
+                <p class="card-text"><strong>Birth Place: </strong>{{musicDir.BirthPlace}}</p>
+        </div>
 
-            <h5 class="card-title">Name: {{musicDir.FullName}}</h5>
-            <p class="card-text"><strong>Gender:</strong> {{musicDir.Gender}}</p>
-            <p class="card-text"><strong>Date of Birth: </strong>{{musicDir.DoB}}</p>
-            <p class="card-text"><strong>Date of Death: </strong>{{musicDir.DOD}}</p>
-            <p class="card-text"><strong>Birth Place: </strong>{{musicDir.BirthPlace}}</p>
-            <p class="card-text"><strong>Awards: </strong>{{musicDir.Awards|linebreaks}}</p>
-
-    </div>
+        <div class="row" style="padding: 40px;">
+                <div class="col-md-12">
+                        <h2 class="text-warning">Awards</h2>
+                        <p class="card-text">{{musicDir.Awards|linebreaks}}</p>
+                </div>
+        </div>
 </div>
 
 {% endblock %}

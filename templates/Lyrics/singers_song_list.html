@@ -2,9 +2,10 @@
 
 {% block Content %}
 
-<div class="card-group row col-md-12">
+<div class="row hidden-md-up" style="margin: 30px;">
     {% for ls in s_songs %}
         {% include 'Lyrics/card_songs_list.html' %}
     {% endfor %}
 </div>
+
 {% endblock %}

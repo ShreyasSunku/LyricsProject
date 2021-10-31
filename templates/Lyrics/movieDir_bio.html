@@ -2,21 +2,27 @@
 
 {% block Content %}
 
-<div class="py-4">
-    <div class="container">
+<div class="row" style="padding: 30px;">
+        <div class="col-md-6 col-xl-7">
+                {% if movieDir.Upload %}
+                <img src="{{movieDir.Upload.url}}" alt="{{movieDir.Movie}}" class="mx-auto d-block" width="600" height="350">
+                {% endif %}
+        </div>
 
-            {% if movieDir.Upload %}
-            <img src="{{movieDir.Upload.url}}" alt="{{movieDir.Movie}}" class="mx-auto d-block" width="350" height="236">
-            {% endif %}
+        <div class="col-md-6 col-xl-5">
+                <p>Name: <strong class="text-warning" style="font-size: 20px;">{{movieDir.FullName}}</strong></p>
+                <p class="card-text"><strong>Gender:</strong> {{movieDir.Gender}}</p>
+                <p class="card-text"><strong>Date of Birth: </strong>{{movieDir.DoB}}</p>
+                <p class="card-text"><strong>Date of Death: </strong>{{movieDir.DOD}}</p>
+                <p class="card-text"><strong>Birth Place: </strong>{{movieDir.BirthPlace}}</p>
+        </div>
 
-            <h5 class="card-title">Name: {{movieDir.FullName}}</h5>
-            <p class="card-text"><strong>Gender:</strong> {{movieDir.Gender}}</p>
-            <p class="card-text"><strong>Date of Birth: </strong>{{movieDir.DoB}}</p>
-            <p class="card-text"><strong>Date of Death: </strong>{{movieDir.DOD}}</p>
-            <p class="card-text"><strong>Birth Place: </strong>{{movieDir.BirthPlace}}</p>
-            <p class="card-text"><strong>Awards: </strong>{{movieDir.Awards|linebreaks}}</p>
-
-    </div>
+        <div class="row" style="padding: 40px;">
+                <div class="col-md-12">
+                        <h2 class="text-warning">Awards</h2>
+                        <p class="card-text">{{movieDir.Awards|linebreaks}}</p>
+                </div>
+        </div>
 </div>
 
 {% endblock %}
