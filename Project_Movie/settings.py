@@ -36,7 +36,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Lyrics.apps.LyricsConfig',
+    'LyricsAPI.apps.LyricsapiConfig',
     'embed_video',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

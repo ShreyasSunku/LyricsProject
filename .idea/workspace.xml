@@ -3,25 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3faf6cd2-9496-4d6f-b2ca-99157556ce5b" name="Changes" comment="Lyrics added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Logo/LyricsOn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Logo/l2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Logo/l3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/Base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/LyricsList.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/LyricsList.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/LyricsPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/LyricsPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/actor.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/actor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/actor_bio.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/actor_bio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/card_movies_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/card_movies_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/card_songs_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/card_songs_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/language.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/language.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/movieDir_bio.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/movieDir_bio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/movieDirector.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/movieDirector.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/movies.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/movies.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/musicDir_bio.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/musicDir_bio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/musicDirector.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/musicDirector.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/singer_bio.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/singer_bio.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/singers.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/singers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Lyrics/singers_song_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/singers_song_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lyrics/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Lyrics/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Movie/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Movie/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Movie/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Movie/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/Lyrics/movie_details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Lyrics/movie_details.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -59,7 +46,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
