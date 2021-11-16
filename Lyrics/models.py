@@ -8,6 +8,9 @@ Gender_choices = (
     ("Others", "Others"),
 )
 
+class Logo(models.Model):
+    Logo_Image = models.ImageField(upload_to='images/Logo/', null=True, blank=True)
+
 
 class Actor(models.Model):
     FirstName = models.CharField(max_length=50)

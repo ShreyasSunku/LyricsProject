@@ -6,7 +6,8 @@ from .models import Lyrics, \
     Actor, \
     MovieDirector, \
     Language, \
-    YouTube
+    YouTube, \
+    Logo
 
 
 def movies_data(request):
