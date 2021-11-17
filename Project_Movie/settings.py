@@ -24,11 +24,12 @@ SECRET_KEY = 'django-insecure-ljb-_(64@)$wnc5c-0hzdxw1kz@+fk8y!lqe0^!dr*p#nnsl%@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,7 +39,7 @@ INSTALLED_APPS = [
     'Lyrics.apps.LyricsConfig',
     'LyricsAPI.apps.LyricsapiConfig',
     'embed_video',
-    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
@@ -81,6 +82,10 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 # DATABASES = {
 #     'default': {
@@ -143,6 +148,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-
-
 
